@@ -26,6 +26,8 @@
         </a>
 
         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+           <!-- Button trigger modal -->
+          <a class="py-2 px-4 text-dark text-decoration-none"  data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Login</a>
           <a class="py-2 text-dark text-decoration-none" href="about.html">About Me</a>
         </nav>
       </div>
@@ -101,7 +103,35 @@
   </div>
   <!-- End of Footer -->
 
+ 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <button type="button" class="btn-close float-end py-3" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-content">
+      <div class="modal-body">
+        <form action="index.html">
+          <div class="card mx-1 mb-4" style="margin-top: 1em;">
+              <img class="mx-auto my-4" width="100" height="100" src="assets/icon.png">
+              <h4 class="mx-auto">Login Form</h4>
+              <div class="form-group mx-4 my-4">
+                  <input type="text" name="" class="form-control mb-2" id="" value="John Doe" readonly>
+                  <input type="password" name="" class="form-control" id="" value="johndoe" readonly>
+              </div>
+              <input type="submit" onclick="myFunction()" class="form-control w-50 mx-auto mb-4" value="Sign In">
+              </div>  
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function myFunction() {
+    alert("Let's pretend that you already logged in. 謝謝妳");
+  }
+  </script>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
