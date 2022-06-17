@@ -16,6 +16,15 @@ class Ratio
         this.a = a;
         this.b = b;
     }
+
+    add(x)
+    {
+        return new Ratio(this.a * (lcm(this.b, x.b) / this.b) + x.a * (lcm(this.b, x.b) / x.b), lcm(this.b, x.b));
+    }
+    sub(x)
+    {
+        return new Ratio(this.a * (lcm(this.b, x.b) / this.b) - x.a * (lcm(this.b, x.b) / x.b), lcm(this.b, x.b));
+    }
     mul(x)
     {
         return new Ratio(this.a * x.a, this.b * x.b);
